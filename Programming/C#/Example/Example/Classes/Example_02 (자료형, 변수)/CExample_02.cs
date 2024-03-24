@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -66,7 +66,7 @@ using System.Threading.Tasks;
  * 
  * 단, 전통적으로 변수 이름에 사용 할 수 있는 문자의 종류는 알파벳
  * 대/소문자, _ (언더 스코어), 숫자 만을 사용하는 것이기 때문에
- * 가능하면 해당 문자만을 사용하는 것은 추천한다.
+ * 가능하면 해당 문자만을 사용하는 것을 추천한다.
  * 
  * 단, 변수 이름의 첫 문자는 숫자를 사용하는 것이 불가능하기 때문에
  * 주의가 필요하며 알파벳 대문자와 소문자를 구분하기 때문에 같은
