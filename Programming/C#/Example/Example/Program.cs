@@ -1,4 +1,4 @@
-﻿/*
+/*
  * 전처리기 명령어란?
  * - 전처리기 단계에서 실행되는 명령어로서 C# 코드로
  * 작성 된 명령문을 컴파일하기 전에 코드 한번 튜닝하는
@@ -60,7 +60,9 @@ namespace Example
 			//Example.Classes.Example_01.CExample_01.Start(args);
 			//Example.Classes.Example_02.CExample_02.Start(args);
 			//Example.Classes.Example_03.CExample_03.Start(args);
-			Example.Classes.Example_04.CExample_04.Start(args);
+			//Example.Classes.Example_04.CExample_04.Start(args);
+			//Example.Classes.Example_05.CExample_05.Start(args);
+			Example.Classes.Example_06.CExample_06.Start(args);
 #elif TRAINING
 
 #endif

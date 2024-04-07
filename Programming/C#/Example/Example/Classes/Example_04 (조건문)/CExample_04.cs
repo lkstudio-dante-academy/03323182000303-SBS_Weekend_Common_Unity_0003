@@ -1,4 +1,4 @@
-﻿//#define E04_IF_ELSE
+//#define E04_IF_ELSE
 #define E04_SWITCH_CASE
 
 using System;
@@ -51,39 +51,39 @@ namespace Example.Classes.Example_04
 		public static void Start(string[] args)
 		{
 #if E04_IF_ELSE
-            int nScore = 0;
+			int nScore = 0;
 
-            Console.Write("점수 입력 : ");
-            int.TryParse(Console.ReadLine(), out nScore);
+			Console.Write("점수 입력 : ");
+			int.TryParse(Console.ReadLine(), out nScore);
 
-            // F 학점 일 경우
-            if (nScore < 60)
-            {
-                Console.WriteLine("F 학점입니다.");
-            }
-            else
-            {
-                // A 학점 일 경우
-                if (nScore >= 90)
-                {
-                    Console.WriteLine("A 학점입니다.");
-                }
-                // B 학점 일 경우
-                else if (nScore >= 80)
-                {
-                    Console.WriteLine("B 학점입니다.");
-                }
-                // C 학점 일 경우
-                else if (nScore >= 70)
-                {
-                    Console.WriteLine("C 학점입니다.");
-                }
-                // D 학점 일 경우
-                else
-                {
-                    Console.WriteLine("D 학점입니다.");
-                }
-            }
+			// F 학점 일 경우
+			if(nScore < 60)
+			{
+				Console.WriteLine("F 학점입니다.");
+			}
+			else
+			{
+				// A 학점 일 경우
+				if(nScore >= 90)
+				{
+					Console.WriteLine("A 학점입니다.");
+				}
+				// B 학점 일 경우
+				else if(nScore >= 80)
+				{
+					Console.WriteLine("B 학점입니다.");
+				}
+				// C 학점 일 경우
+				else if(nScore >= 70)
+				{
+					Console.WriteLine("C 학점입니다.");
+				}
+				// D 학점 일 경우
+				else
+				{
+					Console.WriteLine("D 학점입니다.");
+				}
+			}
 #elif E04_SWITCH_CASE
 			int nScore = 0;
 
