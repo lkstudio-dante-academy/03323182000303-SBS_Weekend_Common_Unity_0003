@@ -62,7 +62,9 @@ namespace Example
 			//Example.Classes.Example_03.CExample_03.Start(args);
 			//Example.Classes.Example_04.CExample_04.Start(args);
 			//Example.Classes.Example_05.CExample_05.Start(args);
-			Example.Classes.Example_06.CExample_06.Start(args);
+			//Example.Classes.Example_06.CExample_06.Start(args);
+			//Example.Classes.Example_07.CExample_07.Start(args);
+			Example.Classes.Example_08.CExample_08.Start(args);
 #elif TRAINING
 
 #endif
