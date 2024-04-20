@@ -1,5 +1,5 @@
-#define E08_METHOD_01
-#define E08_METHOD_02
+//#define E08_METHOD_01
+//#define E08_METHOD_02
 #define E08_METHOD_03
 
 using System;
@@ -36,6 +36,14 @@ using System.Threading.Tasks;
  * {
  *		// 메서드가 호출 될 때 실행 될 명령문
  * }
+ * 
+ * 단, 메서드의 입력 (매개 변수) 은 원하는 만큼 명시하는 것이 가능하지만
+ * 메서드의 출력은 하나만 명시하는 것이 가능하다. (즉, 입력 데이터는 
+ * 여러 개를 받는 것이 가능하지만 출력은 오직 하나의 데이터만 출력하는 것이 
+ * 가능하다.)
+ * 
+ * 따라서, 메서드의 여러 데이터를 출력하기 위해서는 컬렉션과 같은 기능을
+ * 활용해야한다.
  */
 namespace Example.Classes.Example_08
 {
@@ -53,14 +61,88 @@ namespace Example.Classes.Example_08
 
 			char.TryParse(oTokens[1], out char chOperator);
 
+			/*
+			 * 호출 할 메서드가 입력 데이터를 요구 할 경우 반드시 요구하는
+			 * 데이터만큼 입력 값을 전달 할 필요가 있다. (즉, 매개 변수의
+			 * 개수와 입력 값의 개수는 동일해야한다는 것을 알 수 있다.)
+			 * 
+			 * 또한, 입력 값을 명시하는 순서는 메서드의 매개 변수의 순서와
+			 * 동일해야한다. (즉, 입력 값은 차례대로 각 매개 변수에 전달
+			 * 된다는 것을 알 수 있다.
+			 */
 			decimal dmResult = GetResultCalc(nValA, 
 				chOperator, nValB);
 
 			Console.WriteLine("결과 : {0}", dmResult);
 #elif E08_METHOD_02
+			int nValA = 10;
+			int nValB = 20;
 
+			/*
+			 * C# 의 메서드 호출 규칙은 기본적으로 값에 의한 호출이기
+			 * 때문에 특정 메서드를 호출 할 때 입력 값을 명시 할 경우
+			 * 해당 값은 메서드의 매개 변수로 복사가 된다는 것을 알 수
+			 * 있다. (즉, 메서드 내부에서는 원본 변수의 값을 변경하는
+			 * 것이 불가능하다는 것을 알 수 있다.)
+			 * 
+			 * 만약, 메서드에서 원본 변수에 값을 변경하고 싶다면 해당 변수의
+			 * 참조 값을 전달 할 필요가 있으며 이러한 호출 방식을 참조에
+			 * 의한 호출이라고 한다.
+			 * 
+			 * C# 참조 호출 관련 키워드
+			 * - ref
+			 * - out
+			 * 
+			 * int nVal = 0;
+			 * SomeMethod(ref nVal);
+			 * 
+			 * void SomeMethod(ref int a_nVal)
+			 * {
+			 *		// Do Something
+			 * }
+			 * 
+			 * 위와 같이 참조 키워드를 사용해서 메서드를 호출하면 변수가
+			 * 지니고 있는 데이터를 전달하는 것이 아니라 변수를 참조 할 수
+			 * 있는 참조 값이 전달 된다는 것을 알 수 있다.
+			 * 
+			 * 또한, 메서드 매개 변수에는 참조 키워드를 명시해서 단순한
+			 * 데이터가 복사되는 것이 아니라 참조를 전달 받을 수 있는 매개
+			 * 변수라는 것을 C# 컴파일러에게 알려 줄 필요가 있다.
+			 */
+			SwapByVal(nValA, nValB);
+
+			Console.WriteLine("=====> 값에 의한 호출 <=====");
+			Console.WriteLine("{0}, {1}", nValA, nValB);
+
+			SwapByRef(ref nValA, ref nValB);
+
+			Console.WriteLine("\n=====> 참조에 의한 호출 <=====");
+			Console.WriteLine("{0}, {1}", nValA, nValB);
 #elif E08_METHOD_03
+			int nValA = 0;
+			int nValB = 0;
 
+			/*
+			 * ref 키워드 vs out 키워드
+			 * - 두 키워드 모두 변수의 참조 값을 전달하는 역할을 수행한다.
+			 * 
+			 * ref 키워드는 단순히 참조 값을 전달하는 역할만을 수행하기
+			 * 때문에 초기화 되지 않은 변수에는 사용하는 것이 불가능하다.
+			 * (즉, 컴파일 에러가 발생한다는 것을 알 수 있다.)
+			 * 
+			 * 반면, out 키워드는 초기화되지 않은 변수에도 사용하는 것이
+			 * 가능하다.
+			 * 
+			 * 이는 out 키워드로 참조를 전달 받을 경우 참조를 통해 대상의 
+			 * 값을 읽어오기 전에 반드시 특정 값을 설정해줘야하기 때문이다.
+			 * (즉, out 키워드로 참조를 전달 받을 경우 반드시 특정 값으로
+			 * 설정해줘야하며 그렇지 않으면 컴파일 에러가 발생한다는 것을
+			 * 알 수 있다.)
+			 */
+			SetValByRef(ref nValA, 10);
+			SetValByOut(out nValB, 20);
+
+			Console.WriteLine("{0}, {1}", nValA, nValB);
 #endif
 		}
 
@@ -100,9 +182,34 @@ namespace Example.Classes.Example_08
 			return 0;
 		}
 #elif E08_METHOD_02
+		/** 값을 교환한다 */
+		private static void SwapByVal(int a_nValA, int a_nValB)
+		{
+			int nTemp = a_nValA;
+			a_nValA = a_nValB;
+			a_nValB = nTemp;
+		}
 
+		/** 값을 교환한다 */
+		private static void SwapByRef(ref int a_nValA, 
+			ref int a_nValB)
+		{
+			int nTemp = a_nValA;
+			a_nValA = a_nValB;
+			a_nValB = nTemp;
+		}
 #elif E08_METHOD_03
+		/** 값을 변경한다 */
+		private static void SetValByRef(ref int a_nTarget, int a_nVal)
+		{
+			a_nTarget = a_nVal;
+		}
 
+		/** 값을 변경한다 */
+		private static void SetValByOut(out int a_nTarget, int a_nVal)
+		{
+			a_nTarget = a_nVal;
+		}
 #endif
 	}
 }
