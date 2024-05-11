@@ -93,29 +93,48 @@ using System.Threading.Tasks;
  * - 객체를 대상으로 산술 연산자와 같은 연산자를 사용할 수 있게 해주는 
  * 기능을 의미한다. (즉, 연산자 오버로딩을 활용하면 객체를 일반적인
  * 데이터처럼 제어하는 것이 가능하다.)
+ * 
+ * Ex)
+ * class CSomeClass
+ * {
+ *		public static void operator +(CSomeClass a_oLhs, CSomeClass a_oRhs)
+ *		{
+ *			// Do Something
+ *		}
+ * }
+ * 
+ * CSomeClass oSomeObjA = new CSomeClass();
+ * CSomeClass oSomeObjB = new CSomeClass();
+ * 
+ * CSomeClass oResult = oSomeObjA + oSomeObjB;
+ * 
+ * 위와 같이 연산자 오버로딩은 operator 계열의 메서드로 구현하는 것이
+ * 가능하며 특정 연산자에 대한 operator 메서드가 구현되면 C# 컴파일러는
+ * 객체를 대상은 해당 연산자를 사용했을 때 매칭되는 operator 메서드를
+ * 호출해준다.
  */
 /** 확장 클래스 */
 public static class CExtension
 {
 	/** 합계를 반환한다 */
-	public static int ExGetValSum(this List<int> a_oListVals)
+	public static int ExGetValSum(this List<int> a_oListValues)
 	{
 		int nValSum = 0;
 
-		for(int i = 0; i < a_oListVals.Count; ++i)
+		for(int i = 0; i < a_oListValues.Count; ++i)
 		{
-			nValSum += a_oListVals[i];
+			nValSum += a_oListValues[i];
 		}
 
 		return nValSum;
 	}
 
 	/** 값을 출력한다 */
-	public static void ExPrintVals(this List<int> a_oListVals)
+	public static void ExPrintValues(this List<int> a_oListValues)
 	{
-		for(int i = 0; i < a_oListVals.Count; ++i)
+		for(int i = 0; i < a_oListValues.Count; ++i)
 		{
-			Console.Write("{0}, ", a_oListVals[i]);
+			Console.Write("{0}, ", a_oListValues[i]);
 		}
 
 		Console.WriteLine();
@@ -151,19 +170,29 @@ namespace Example.Classes.Example_13
 			oDerivedB.ShowInfo();
 #elif E14_CLASS_02
 			var oRandom = new Random();
-			var oListVals = new List<int>();
+			var oListValues = new List<int>();
 
 			for(int i = 0; i < 10; ++i)
 			{
-				oListVals.Add(oRandom.Next(1, 100));
+				oListValues.Add(oRandom.Next(1, 100));
 			}
 
 			Console.WriteLine("=====> 리스트 <=====");
-			oListVals.ExPrintVals();
+			oListValues.ExPrintValues();
 
-			Console.WriteLine("\n합계 : {0}", oListVals.ExGetValSum());
+			Console.WriteLine("\n합계 : {0}", oListValues.ExGetValSum());
 #elif E14_CLASS_03
+			CVec3 oVec3A = new CVec3(10.0f, 0.0f, 0.0f);
+			CVec3 oVec3B = new CVec3(0.0f, 10.0f, 0.0f);
 
+			oVec3A.Normalize();
+			oVec3B.Normalize();
+
+			Console.WriteLine("=====> 연산자 오버로딩 <=====");
+			Console.WriteLine("{0} + {1} = {2}", oVec3A, oVec3B, oVec3A + oVec3B);
+			Console.WriteLine("{0} - {1} = {2}", oVec3A, oVec3B, oVec3A - oVec3B);
+			Console.WriteLine("{0} * {1} = {2}", oVec3A, 10.0f, oVec3A * 10.0f);
+			Console.WriteLine("{0} / {1} = {2}", oVec3A, 10.0f, oVec3A / 10.0f);
 #endif
 		}
 
@@ -204,10 +233,70 @@ namespace Example.Classes.Example_13
 				Console.WriteLine("실수 : {0}", m_fVal);
 			}
 		}
-#elif E14_CLASS_02
-
 #elif E14_CLASS_03
+		/** 3 차원 벡터 */
+		private class CVec3
+		{
+			public float X { get; set; } = 0.0f;
+			public float Y { get; set; } = 0.0f;
+			public float Z { get; set; } = 0.0f;
 
+			public float Length => (float)Math.Sqrt(Math.Pow(this.X, 2.0) + Math.Pow(this.Y, 2.0));
+
+			/** 생성자 */
+			public CVec3(float a_fX = 0.0f,
+				float a_fY = 0.0f, float a_fZ = 0.0f)
+			{
+				this.X = a_fX;
+				this.Y = a_fY;
+				this.Z = a_fZ;
+			}
+
+			/** 정규화한다 */
+			public void Normalize()
+			{
+				float fLength = this.Length;
+
+				this.X /= fLength;
+				this.Y /= fLength;
+				this.Z /= fLength;
+			}
+
+			/** 문자열로 변환한다 */
+			public override string ToString()
+			{
+				return string.Format("({0}, {1}, {2})",
+					this.X, this.Y, this.Z);
+			}
+
+			/** operator + */
+			public static CVec3 operator +(CVec3 a_oLhs, CVec3 a_oRhs)
+			{
+				return new CVec3(a_oLhs.X + a_oRhs.X,
+					a_oLhs.Y + a_oRhs.Y, a_oLhs.Z + a_oRhs.Z);
+			}
+
+			/** operator - */
+			public static CVec3 operator -(CVec3 a_oLhs, CVec3 a_oRhs)
+			{
+				return new CVec3(a_oLhs.X - a_oRhs.X,
+					a_oLhs.Y - a_oRhs.Y, a_oLhs.Z - a_oRhs.Z);
+			}
+
+			/** operator * */
+			public static CVec3 operator *(CVec3 a_oLhs, float a_fRhs)
+			{
+				return new CVec3(a_oLhs.X * a_fRhs,
+					a_oLhs.Y * a_fRhs, a_oLhs.Z * a_fRhs);
+			}
+
+			/** operator / */
+			public static CVec3 operator /(CVec3 a_oLhs, float a_fRhs)
+			{
+				return new CVec3(a_oLhs.X / a_fRhs,
+					a_oLhs.Y / a_fRhs, a_oLhs.Z / a_fRhs);
+			}
+		}
 #endif
 	}
 }

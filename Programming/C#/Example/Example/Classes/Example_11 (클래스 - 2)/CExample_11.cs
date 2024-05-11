@@ -29,19 +29,19 @@ namespace Example.Classes.Example_11
 			Console.WriteLine("=====> 캐릭터 <=====");
 			oCharacter.ShowInfo();
 #elif E11_CLASS_02
-			CArray oVals = new CArray(5);
+			CArray oValues = new CArray(5);
 			Random oRandom = new Random();
 
 			for(int i = 0; i < 10; ++i)
 			{
-				oVals.AddVal(oRandom.Next(1, 100));
+				oValues.AddVal(oRandom.Next(1, 100));
 			}
 
 			Console.WriteLine("=====> 배열 <=====");
 
-			for(int i = 0; i < oVals.NumVals; ++i)
+			for(int i = 0; i < oValues.NumValues; ++i)
 			{
-				Console.Write("{0}, ", oVals[i]);
+				Console.Write("{0}, ", oValues[i]);
 			}
 
 			Console.WriteLine();
@@ -189,14 +189,14 @@ namespace Example.Classes.Example_11
 		/** 배열 */
 		private class CArray
 		{
-			private int[] m_oVals = null;
+			private int[] m_oValues = null;
 
-			public int NumVals { get; private set; } = 0;
+			public int NumValues { get; private set; } = 0;
 
 			/** 생성자 */
 			public CArray(int a_nSize)
 			{
-				m_oVals = new int[a_nSize];
+				m_oValues = new int[a_nSize];
 			}
 
 			/*
@@ -209,11 +209,11 @@ namespace Example.Classes.Example_11
 			{
 				get
 				{
-					return m_oVals[a_nIdx];
+					return m_oValues[a_nIdx];
 				}
 				set
 				{
-					m_oVals[a_nIdx] = value;
+					m_oValues[a_nIdx] = value;
 				}
 			}
 
@@ -221,12 +221,12 @@ namespace Example.Classes.Example_11
 			public void AddVal(int a_nVal)
 			{
 				// 배열이 가득찼을 경우
-				if(this.NumVals >= m_oVals.Length)
+				if(this.NumValues >= m_oValues.Length)
 				{
-					Array.Resize(ref m_oVals, m_oVals.Length * 2);
+					Array.Resize(ref m_oValues, m_oValues.Length * 2);
 				}
 
-				m_oVals[this.NumVals++] = a_nVal;
+				m_oValues[this.NumValues++] = a_nVal;
 			}
 		}
 #elif E11_CLASS_03

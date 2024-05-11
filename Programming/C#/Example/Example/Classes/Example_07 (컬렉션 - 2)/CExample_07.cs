@@ -38,14 +38,14 @@ namespace Example.Classes.Example_07
 		{
 #if E07_SET
 			Random oRandom = new Random();
-			HashSet<int> oSetVals = new HashSet<int>();
+			HashSet<int> oSetValues = new HashSet<int>();
 
 			Console.WriteLine("=====> 입력 순서 <=====");
 
 			for(int i = 0; i < 10; ++i)
 			{
 				int nVal = oRandom.Next(0, 10);
-				oSetVals.Add(nVal);
+				oSetValues.Add(nVal);
 
 				Console.Write("{0}, ", nVal);
 			}
@@ -62,40 +62,35 @@ namespace Example.Classes.Example_07
 			 * 일반적인 반복문과 반복이 끝나는 조건을 따로 명시 할
 			 * 필요가 없다.)
 			 */
-			foreach(int nVal in oSetVals)
+			foreach(int nVal in oSetValues)
 			{
 				Console.Write("{0}, ", nVal);
 			}
 
-			Console.WriteLine("\n\n개수 : {0}", oSetVals.Count);
+			Console.WriteLine("\n\n개수 : {0}", oSetValues.Count);
 #elif E07_DICTIONARY
-			Dictionary<string, int> oDictValsA = new Dictionary<string, int>();
-			Dictionary<string, float> oDictValsB = new Dictionary<string, float>();
+			Dictionary<string, int> oDictValuesA = new Dictionary<string, int>();
+			Dictionary<string, float> oDictValuesB = new Dictionary<string, float>();
 
 			for(int i = 0; i < 10; ++i)
 			{
 				string oKey = $"Key_{i + 1:00}";
 
-				oDictValsA.Add(oKey, i + 1);
-				oDictValsB.Add(oKey, i + 1.0f);
+				oDictValuesA.Add(oKey, i + 1);
+				oDictValuesB.Add(oKey, i + 1.0f);
 			}
 
 			Console.WriteLine("=====> 딕셔너리 A <=====");
 
-			foreach(KeyValuePair<string, int> stKeyVal in oDictValsA)
+			foreach(KeyValuePair<string, int> stKeyVal in oDictValuesA)
 			{
 				Console.Write("{0}:{1}, ", 
 					stKeyVal.Key, stKeyVal.Value);
 			}
 
-			//if(oDictValsA.ContainsKey(10))
-			//{
-			//	oDictValsA["Key_01"] = 10;
-			//}
-			
 			Console.WriteLine("\n\n=====> 딕셔너리 B <=====");
 
-			foreach(KeyValuePair<string, float> stKeyVal in oDictValsB)
+			foreach(KeyValuePair<string, float> stKeyVal in oDictValuesB)
 			{
 				Console.Write("{0}:{1}, ",
 					stKeyVal.Key, stKeyVal.Value);

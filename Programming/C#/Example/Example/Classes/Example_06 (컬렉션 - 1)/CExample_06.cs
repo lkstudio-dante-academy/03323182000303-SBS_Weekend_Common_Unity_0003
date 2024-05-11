@@ -46,8 +46,8 @@ using System.Threading.Tasks;
  * - 자료형 + [] (배열 기호) + 배열 이름
  * 
  * Ex)
- * int[] oValsA = new int[5];
- * float[] oValsB = new float[5];
+ * int[] oValuesA = new int[5];
+ * float[] oValuesB = new float[5];
  * 
  * 리스트란?
  * - 관리되는 데이터에 순서가 존재하는 컬렉션을 의미한다. (즉, 리스트는
@@ -112,17 +112,17 @@ namespace Example.Classes.Example_06
 		public static void Start(string[] args)
 		{
 #if E06_ARRAY
-			int[] oValsA = new int[5];
-			oValsA[0] = 1;
-			oValsA[1] = 2;
-			oValsA[2] = 3;
+			int[] oValuesA = new int[5];
+			oValuesA[0] = 1;
+			oValuesA[1] = 2;
+			oValuesA[2] = 3;
 
-			int[] oValsB = new int[5]
+			int[] oValuesB = new int[5]
 			{
 				1, 2, 3, 4, 5
 			};
 
-			int[] oValsC = new int[]
+			int[] oValuesC = new int[]
 			{
 				1, 2, 3
 			};
@@ -148,23 +148,23 @@ namespace Example.Classes.Example_06
 
 			Console.WriteLine("=====> 1 차원 배열 A <=====");
 
-			for(int i = 0; i < oValsA.Length; ++i)
+			for(int i = 0; i < oValuesA.Length; ++i)
 			{
-				Console.Write("{0}, ", oValsA[i]);
+				Console.Write("{0}, ", oValuesA[i]);
 			}
 
 			Console.WriteLine("\n\n=====> 1 차원 배열 B <=====");
 
-			for(int i = 0; i < oValsB.Length; ++i)
+			for(int i = 0; i < oValuesB.Length; ++i)
 			{
-				Console.Write("{0}, ", oValsB[i]);
+				Console.Write("{0}, ", oValuesB[i]);
 			}
 
 			Console.WriteLine("\n\n=====> 1 차원 배열 C <=====");
 
-			for(int i = 0; i < oValsC.Length; ++i)
+			for(int i = 0; i < oValuesC.Length; ++i)
 			{
-				Console.Write("{0}, ", oValsC[i]);
+				Console.Write("{0}, ", oValuesC[i]);
 			}
 
 			Console.WriteLine("\n\n=====> 2 차원 배열 A <=====");
@@ -231,15 +231,15 @@ namespace Example.Classes.Example_06
 
 			Console.WriteLine();
 #elif E06_STACK_QUEUE
-			Stack<int> oStackVals = new Stack<int>();
-			Queue<int> oQueueVals = new Queue<int>();
+			Stack<int> oStackValues = new Stack<int>();
+			Queue<int> oQueueValues = new Queue<int>();
 
 			Console.WriteLine("=====> 데이터 입력 순서 <=====");
 
 			for(int i = 0; i < 10; ++i)
 			{
-				oStackVals.Push(i + 1);
-				oQueueVals.Enqueue(i + 1);
+				oStackValues.Push(i + 1);
+				oQueueValues.Enqueue(i + 1);
 
 				Console.Write("{0}, ", i + 1);
 			}
@@ -253,16 +253,16 @@ namespace Example.Classes.Example_06
 			 * 해당 데이터는 여전히 컬렉션에 존재하지만 스택과
 			 * 큐는 다르다는 것을 알 수 있다.)
 			 */
-			while(oStackVals.Count >= 1)
+			while(oStackValues.Count >= 1)
 			{
-				Console.Write("{0}, ", oStackVals.Pop());
+				Console.Write("{0}, ", oStackValues.Pop());
 			}
 
 			Console.WriteLine("\n\n=====> 큐 <=====");
 
-			while(oQueueVals.Count >= 1)
+			while(oQueueValues.Count >= 1)
 			{
-				Console.Write("{0}, ", oQueueVals.Dequeue());
+				Console.Write("{0}, ", oQueueValues.Dequeue());
 			}
 
 			Console.WriteLine();

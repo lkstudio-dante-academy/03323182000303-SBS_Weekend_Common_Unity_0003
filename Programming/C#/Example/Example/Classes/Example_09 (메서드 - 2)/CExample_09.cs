@@ -18,7 +18,7 @@ using System.Threading.Tasks;
  * 서로 다른 자료형의 데이터는 가변 길이 매개 변수를 활용하는 것이 불가능하다.
  * 
  * Ex)
- * void SomeMethod(params int[] a_oVals)
+ * void SomeMethod(params int[] a_oValues)
  * {
  *		// Do Something
  * }
@@ -132,13 +132,13 @@ namespace Example.Classes.Example_09
 
 #if E09_METHOD_01
 		/** 합계를 반환한다 */
-		private static int GetValSum(params int[] a_oVals)
+		private static int GetValSum(params int[] a_oValues)
 		{
 			int nValSum = 0;
 
-			for(int i = 0; i < a_oVals.Length; ++i)
+			for(int i = 0; i < a_oValues.Length; ++i)
 			{
-				nValSum += a_oVals[i];
+				nValSum += a_oValues[i];
 			}
 
 			return nValSum;

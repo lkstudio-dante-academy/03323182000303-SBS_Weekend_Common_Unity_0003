@@ -17,14 +17,14 @@ namespace Practice.Classes.Practice_04
 			List<int> oAnswer = new List<int>();
 
 #if P04_USE_SET
-			HashSet<int> oSetVals = new HashSet<int>();
+			HashSet<int> oSetValues = new HashSet<int>();
 
-			while(oSetVals.Count < 4)
+			while(oSetValues.Count < 4)
 			{
-				oSetVals.Add(oRandom.Next(1, 10));
+				oSetValues.Add(oRandom.Next(1, 10));
 			}
 
-			foreach(int nVal in oSetVals)
+			foreach(int nVal in oSetValues)
 			{
 				oAnswer.Add(nVal);
 			}

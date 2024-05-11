@@ -56,11 +56,19 @@
     <Compile Include="Classes\Example_11 %28클래스 - 2%29\CExample_11.cs" />
     <Compile Include="Classes\Example_12 %28클래스 - 3%29\CExample_12.cs" />
     <Compile Include="Classes\Example_13 %28클래스 - 4%29\CExample_13.cs" />
+    <Compile Include="Classes\Example_14 %28파일 시스템%29\CExample_14.cs" />
+    <Compile Include="Classes\Example_15 %28제네릭%29\CExample_15.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="Resources\Example_14\Example_14_02.bin" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Example_14\Example_14_01.txt" />
+    <Content Include="Resources\Example_14\Example_14_02.txt" />
+    <Content Include="Resources\Example_15\Example_15_03.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
