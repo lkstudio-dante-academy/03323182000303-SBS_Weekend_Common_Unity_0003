@@ -125,7 +125,7 @@ namespace Example.Classes.Example_09
 			 */
 			int nValSumC = GetValSum(a_nValB: 10, a_nValA: 20);
 
-			Console.WriteLine("{0}, {1}, {2}", 
+			Console.WriteLine("{0}, {1}, {2}",
 				nValSumA, nValSumB, nValSumC);
 #endif // #if E09_METHOD_01
 		}

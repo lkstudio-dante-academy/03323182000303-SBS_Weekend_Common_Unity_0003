@@ -238,7 +238,7 @@ namespace Example.Classes.Example_15
 			/** 생성자 */
 			public CWriterFile(string a_oPathFile)
 			{
-				var oWStream = File.Open(a_oPathFile, 
+				var oWStream = File.Open(a_oPathFile,
 					FileMode.Create, FileAccess.Write);
 
 				m_oWriter = new StreamWriter(oWStream);

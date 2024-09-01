@@ -60,7 +60,7 @@ namespace Practice.Classes.Practice_03
 			}
 
 			char chPrevLetter = a_oMap[a_nY, a_nX];
-			
+
 			a_oMap[a_nY, a_nX] = (chPrevLetter != '#') ?
 				'*' : chPrevLetter;
 

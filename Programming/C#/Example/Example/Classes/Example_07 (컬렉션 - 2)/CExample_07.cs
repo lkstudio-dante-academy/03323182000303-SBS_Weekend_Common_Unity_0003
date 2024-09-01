@@ -84,7 +84,7 @@ namespace Example.Classes.Example_07
 
 			foreach(KeyValuePair<string, int> stKeyVal in oDictValuesA)
 			{
-				Console.Write("{0}:{1}, ", 
+				Console.Write("{0}:{1}, ",
 					stKeyVal.Key, stKeyVal.Value);
 			}
 
