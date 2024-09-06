@@ -120,7 +120,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 50
+  controlID: 111
   draggingID: 0
 --- !u!114 &6
 MonoBehaviour:
@@ -2972,7 +2972,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/03010201000301-S_W_Engine_0003/Scripts/Editor/Global/Define
+    - Assets
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -2988,7 +2988,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 52510000
     m_LastClickedID: 20818
-    m_ExpandedIDs: 00000000366a0000386a00003a6a00003c6a00003e6a0000406a0000426a0000446a0000466a0000
+    m_ExpandedIDs: 00000000366a0000386a00003a6a00003c6a00003e6a0000406a0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -3016,7 +3016,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: ffffffff0000000096680000366a0000386a0000406a0000066c00000a6c0000
+    m_ExpandedIDs: ffffffff00000000386a0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 

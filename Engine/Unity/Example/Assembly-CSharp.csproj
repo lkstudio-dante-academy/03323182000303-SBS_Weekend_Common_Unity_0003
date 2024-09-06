@@ -60,9 +60,9 @@
     <Analyzer Include="D:\.developer\Engine\Unity\2022.3.45f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\03010201000301-S_W_Engine_0003\E01\Example\Scripts\Runtime\Example_01\CExample_01.cs" />
+    <Compile Include="Assets\03010201000301-S_W_Engine_0003\E01\Example\Scripts\Runtime\Example_01\CE01Example_01.cs" />
     <Compile Include="Assets\03010201000301-S_W_Engine_0003\Scripts\Runtime\Global\Define\KDefine+Global.cs" />
-    <Compile Include="Assets\03010201000301-S_W_Engine_0003\E01\Example\Scripts\Runtime\Example_02\CExample_02.cs" />
+    <Compile Include="Assets\03010201000301-S_W_Engine_0003\E01\Example\Scripts\Runtime\Example_02\CE01Example_02.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
