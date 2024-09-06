@@ -5,7 +5,7 @@ using UnityEngine;
 /**
  * Example 2
  */
-public class CExample_02 : MonoBehaviour
+public class CE01Example_02 : MonoBehaviour
 {
 	[SerializeField] private float m_fPower = 0.0f;
 	private float m_fAngle = 0.0f;

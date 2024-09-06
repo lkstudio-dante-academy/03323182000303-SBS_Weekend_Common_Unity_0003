@@ -5,7 +5,7 @@ using UnityEngine;
 /**
  * Example 1
  */
-public class CExample_01 : MonoBehaviour
+public class CE01Example_01 : MonoBehaviour
 {
 	[SerializeField] private GameObject m_oObjects = null;
 	[SerializeField] private GameObject m_oPrefabCube = null;
