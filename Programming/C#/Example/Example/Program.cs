@@ -34,7 +34,7 @@ using System.Threading.Tasks;
 
 namespace Example
 {
-	class Program
+	internal class Program
 	{
 		static void Main(string[] args)
 		{
