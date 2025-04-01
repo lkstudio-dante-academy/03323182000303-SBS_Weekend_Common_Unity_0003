@@ -43,40 +43,40 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="03020203000301-SBS_Weekend_Engine_0003\E01\Example\Classes\Runtime\Example_01 %28기초%29\CE01Example_01.cs" />
-    <Compile Include="03020203000301-SBS_Weekend_Engine_0003\E01\Example\Classes\Runtime\Example_02 %28자료형, 변수%29\CE01Example_02.cs" />
-    <Compile Include="03020203000301-SBS_Weekend_Engine_0003\E01\Example\Classes\Runtime\Example_03 %28연산자%29\CE01Example_03.cs" />
-    <Compile Include="03020203000301-SBS_Weekend_Engine_0003\E01\Example\Classes\Runtime\Example_04 %28조건문%29\CE01Example_04.cs" />
-    <Compile Include="03020203000301-SBS_Weekend_Engine_0003\E01\Example\Classes\Runtime\Example_05 %28반복문, 점프문%29\CE01Example_05.cs" />
-    <Compile Include="03020203000301-SBS_Weekend_Engine_0003\E01\Example\Classes\Runtime\Example_06 %28컬렉션 - 1%29\CE01Example_06.cs" />
-    <Compile Include="03020203000301-SBS_Weekend_Engine_0003\E01\Example\Classes\Runtime\Example_07 %28컬렉션 - 2%29\CE01Example_07.cs" />
-    <Compile Include="03020203000301-SBS_Weekend_Engine_0003\E01\Example\Classes\Runtime\Example_08 %28메서드 - 1%29\CE01Example_08.cs" />
-    <Compile Include="03020203000301-SBS_Weekend_Engine_0003\E01\Example\Classes\Runtime\Example_09 %28메서드 - 2%29\CE01Example_09.cs" />
-    <Compile Include="03020203000301-SBS_Weekend_Engine_0003\E01\Example\Classes\Runtime\Example_10 %28클래스 - 1%29\CE01Example_10.cs" />
-    <Compile Include="03020203000301-SBS_Weekend_Engine_0003\E01\Example\Classes\Runtime\Example_11 %28클래스 - 2%29\CE01Example_11.cs" />
-    <Compile Include="03020203000301-SBS_Weekend_Engine_0003\E01\Example\Classes\Runtime\Example_12 %28클래스 - 3%29\CE01Example_12.cs" />
-    <Compile Include="03020203000301-SBS_Weekend_Engine_0003\E01\Example\Classes\Runtime\Example_13 %28클래스 - 4%29\CE01Example_13.cs" />
-    <Compile Include="03020203000301-SBS_Weekend_Engine_0003\E01\Example\Classes\Runtime\Example_14 %28파일 시스템%29\CE01Example_14.cs" />
-    <Compile Include="03020203000301-SBS_Weekend_Engine_0003\E01\Example\Classes\Runtime\Example_15 %28제네릭%29\CE01Example_15.cs" />
-    <Compile Include="03020203000301-SBS_Weekend_Engine_0003\E01\Practice\Classes\Runtime\Practice_01\CP01Practice_01.cs" />
-    <Compile Include="03020203000301-SBS_Weekend_Engine_0003\E01\Practice\Classes\Runtime\Practice_02\CP01Practice_02.cs" />
-    <Compile Include="03020203000301-SBS_Weekend_Engine_0003\E01\Practice\Classes\Runtime\Practice_03\CP01Practice_03.cs" />
-    <Compile Include="03020203000301-SBS_Weekend_Engine_0003\E01\Practice\Classes\Runtime\Practice_04\CP01Practice_04.cs" />
-    <Compile Include="03020203000301-SBS_Weekend_Engine_0003\E01\Practice\Classes\Runtime\Practice_05\CP01Practice_05.cs" />
-    <Compile Include="03020203000301-SBS_Weekend_Engine_0003\E01\Practice\Classes\Runtime\Practice_06\CP01Canvas_06.cs" />
-    <Compile Include="03020203000301-SBS_Weekend_Engine_0003\E01\Practice\Classes\Runtime\Practice_06\CP01Practice_06.cs" />
-    <Compile Include="03020203000301-SBS_Weekend_Engine_0003\E01\Practice\Classes\Runtime\Practice_06\CP01Shape_06.cs" />
+    <Compile Include="03320203000301-SBS_Weekend_Engine_0003\E01\Example\Classes\Runtime\Example_01 %28기초%29\CE01Example_01.cs" />
+    <Compile Include="03320203000301-SBS_Weekend_Engine_0003\E01\Example\Classes\Runtime\Example_02 %28자료형, 변수%29\CE01Example_02.cs" />
+    <Compile Include="03320203000301-SBS_Weekend_Engine_0003\E01\Example\Classes\Runtime\Example_03 %28연산자%29\CE01Example_03.cs" />
+    <Compile Include="03320203000301-SBS_Weekend_Engine_0003\E01\Example\Classes\Runtime\Example_04 %28조건문%29\CE01Example_04.cs" />
+    <Compile Include="03320203000301-SBS_Weekend_Engine_0003\E01\Example\Classes\Runtime\Example_05 %28반복문, 점프문%29\CE01Example_05.cs" />
+    <Compile Include="03320203000301-SBS_Weekend_Engine_0003\E01\Example\Classes\Runtime\Example_06 %28컬렉션 - 1%29\CE01Example_06.cs" />
+    <Compile Include="03320203000301-SBS_Weekend_Engine_0003\E01\Example\Classes\Runtime\Example_07 %28컬렉션 - 2%29\CE01Example_07.cs" />
+    <Compile Include="03320203000301-SBS_Weekend_Engine_0003\E01\Example\Classes\Runtime\Example_08 %28메서드 - 1%29\CE01Example_08.cs" />
+    <Compile Include="03320203000301-SBS_Weekend_Engine_0003\E01\Example\Classes\Runtime\Example_09 %28메서드 - 2%29\CE01Example_09.cs" />
+    <Compile Include="03320203000301-SBS_Weekend_Engine_0003\E01\Example\Classes\Runtime\Example_10 %28클래스 - 1%29\CE01Example_10.cs" />
+    <Compile Include="03320203000301-SBS_Weekend_Engine_0003\E01\Example\Classes\Runtime\Example_11 %28클래스 - 2%29\CE01Example_11.cs" />
+    <Compile Include="03320203000301-SBS_Weekend_Engine_0003\E01\Example\Classes\Runtime\Example_12 %28클래스 - 3%29\CE01Example_12.cs" />
+    <Compile Include="03320203000301-SBS_Weekend_Engine_0003\E01\Example\Classes\Runtime\Example_13 %28클래스 - 4%29\CE01Example_13.cs" />
+    <Compile Include="03320203000301-SBS_Weekend_Engine_0003\E01\Example\Classes\Runtime\Example_14 %28파일 시스템%29\CE01Example_14.cs" />
+    <Compile Include="03320203000301-SBS_Weekend_Engine_0003\E01\Example\Classes\Runtime\Example_15 %28제네릭%29\CE01Example_15.cs" />
+    <Compile Include="03320203000301-SBS_Weekend_Engine_0003\E01\Practice\Classes\Runtime\Practice_01\CP01Practice_01.cs" />
+    <Compile Include="03320203000301-SBS_Weekend_Engine_0003\E01\Practice\Classes\Runtime\Practice_02\CP01Practice_02.cs" />
+    <Compile Include="03320203000301-SBS_Weekend_Engine_0003\E01\Practice\Classes\Runtime\Practice_03\CP01Practice_03.cs" />
+    <Compile Include="03320203000301-SBS_Weekend_Engine_0003\E01\Practice\Classes\Runtime\Practice_04\CP01Practice_04.cs" />
+    <Compile Include="03320203000301-SBS_Weekend_Engine_0003\E01\Practice\Classes\Runtime\Practice_05\CP01Practice_05.cs" />
+    <Compile Include="03320203000301-SBS_Weekend_Engine_0003\E01\Practice\Classes\Runtime\Practice_06\CP01Canvas_06.cs" />
+    <Compile Include="03320203000301-SBS_Weekend_Engine_0003\E01\Practice\Classes\Runtime\Practice_06\CP01Practice_06.cs" />
+    <Compile Include="03320203000301-SBS_Weekend_Engine_0003\E01\Practice\Classes\Runtime\Practice_06\CP01Shape_06.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="03020203000301-SBS_Weekend_Engine_0003\E01\Example\Resources\Example_14\E01Example_14_02.bin" />
+    <None Include="03320203000301-SBS_Weekend_Engine_0003\E01\Example\Resources\Example_14\E01Example_14_02.bin" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="03020203000301-SBS_Weekend_Engine_0003\E01\Example\Resources\Example_14\E01Example_14_01.txt" />
-    <Content Include="03020203000301-SBS_Weekend_Engine_0003\E01\Example\Resources\Example_14\E01Example_14_02.txt" />
-    <Content Include="03020203000301-SBS_Weekend_Engine_0003\E01\Example\Resources\Example_15\E01Example_15_03.txt" />
+    <Content Include="03320203000301-SBS_Weekend_Engine_0003\E01\Example\Resources\Example_14\E01Example_14_01.txt" />
+    <Content Include="03320203000301-SBS_Weekend_Engine_0003\E01\Example\Resources\Example_14\E01Example_14_02.txt" />
+    <Content Include="03320203000301-SBS_Weekend_Engine_0003\E01\Example\Resources\Example_15\E01Example_15_03.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
