@@ -77,7 +77,7 @@ using System.Threading.Tasks;
  * 있는 플랫폼에 맞는 최적화 된 명령문을 생성 할 수 있다는 것을
  * 알 수 있다.)
  */
-namespace Example._03320203000301_SBS_Weekend_Engine_0003.E01.Example.Classes.Runtime.Example_01
+namespace Example._03320282000301_SBS_Weekend_Engine_0003.E01.Example.Classes.Runtime.Example_01
 {
 	/*
      * 클래스란?

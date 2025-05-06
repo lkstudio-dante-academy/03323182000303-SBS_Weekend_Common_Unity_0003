@@ -90,7 +90,7 @@ using System.Threading.Tasks;
  * 
  * 위와 같이 입력 데이터를 전달 받을 매개 변수를 직접 명시하는 것이 가능하다.
  */
-namespace Example._03320203000301_SBS_Weekend_Engine_0003.E01.Example.Classes.Runtime.Example_09
+namespace Example._03320282000301_SBS_Weekend_Engine_0003.E01.Example.Classes.Runtime.Example_09
 {
 	class CE01Example_09
 	{

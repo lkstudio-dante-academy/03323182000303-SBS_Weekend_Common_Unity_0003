@@ -116,7 +116,7 @@ using System.Threading.Tasks;
  * 데이터가 저장되고 나면 더이상 변경하는 것은 불가능하다. (즉, 읽어
  * 들이는 것만 가능하다.)
  */
-namespace Example._03320203000301_SBS_Weekend_Engine_0003.E01.Example.Classes.Runtime.Example_02
+namespace Example._03320282000301_SBS_Weekend_Engine_0003.E01.Example.Classes.Runtime.Example_02
 {
 	internal class CE01Example_02
 	{

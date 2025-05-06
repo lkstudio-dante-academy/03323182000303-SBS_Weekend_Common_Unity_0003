@@ -29,7 +29,7 @@ using System.Threading.Tasks;
  * 가능하다는 차이점이 존재한다. (즉, 딕셔너리는 키를 통해서 사용자가
  * 원하는 벨류를 탐색하는 컬렉션이라는 것을 알 수 있다.)
  */
-namespace Example._03320203000301_SBS_Weekend_Engine_0003.E01.Example.Classes.Runtime.Example_07
+namespace Example._03320282000301_SBS_Weekend_Engine_0003.E01.Example.Classes.Runtime.Example_07
 {
 	class CE01Example_07
 	{

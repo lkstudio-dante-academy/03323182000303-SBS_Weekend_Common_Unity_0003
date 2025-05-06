@@ -80,7 +80,7 @@ using System.Threading.Tasks;
  * 단, 반대로 부모 클래스를 통해서 생성 된 객체를 자식 클래스 형으로 참조하는
  * 것은 불가능하다.
  */
-namespace Example._03320203000301_SBS_Weekend_Engine_0003.E01.Example.Classes.Runtime.Example_12
+namespace Example._03320282000301_SBS_Weekend_Engine_0003.E01.Example.Classes.Runtime.Example_12
 {
 	class CE01Example_12
 	{

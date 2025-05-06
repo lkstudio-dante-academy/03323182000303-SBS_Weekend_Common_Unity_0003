@@ -46,7 +46,7 @@ using System.Threading.Tasks;
  * 달성하는 설계 방법을 의미한다. (즉, 객체 지향 프로그래밍은 사물을 
  * 정의하는 것이 가장 중요하다는 것을 알 수 있다.)
  */
-namespace Example._03320203000301_SBS_Weekend_Engine_0003.E01.Example.Classes.Runtime.Example_10
+namespace Example._03320282000301_SBS_Weekend_Engine_0003.E01.Example.Classes.Runtime.Example_10
 {
 	class CE01Example_10
 	{

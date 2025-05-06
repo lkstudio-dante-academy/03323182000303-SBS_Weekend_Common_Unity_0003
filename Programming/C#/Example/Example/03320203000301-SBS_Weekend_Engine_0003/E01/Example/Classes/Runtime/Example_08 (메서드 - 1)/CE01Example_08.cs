@@ -45,7 +45,7 @@ using System.Threading.Tasks;
  * 따라서, 메서드의 여러 데이터를 출력하기 위해서는 컬렉션과 같은 기능을
  * 활용해야한다.
  */
-namespace Example._03320203000301_SBS_Weekend_Engine_0003.E01.Example.Classes.Runtime.Example_08
+namespace Example._03320282000301_SBS_Weekend_Engine_0003.E01.Example.Classes.Runtime.Example_08
 {
 	class CE01Example_08
 	{

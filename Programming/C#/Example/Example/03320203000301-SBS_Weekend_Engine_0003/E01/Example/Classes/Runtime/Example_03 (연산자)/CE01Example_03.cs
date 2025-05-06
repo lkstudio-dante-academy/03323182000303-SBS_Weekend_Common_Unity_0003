@@ -19,7 +19,7 @@ using System.Threading.Tasks;
  * - 할당 연산자 (=, +=, -=, *=, /= 등등...)
  * - 기타 연산자 (형 변환 연산자, 조건 연산자 등등...)
  */
-namespace Example._03320203000301_SBS_Weekend_Engine_0003.E01.Example.Classes.Runtime.Example_03
+namespace Example._03320282000301_SBS_Weekend_Engine_0003.E01.Example.Classes.Runtime.Example_03
 {
 	class CE01Example_03
 	{

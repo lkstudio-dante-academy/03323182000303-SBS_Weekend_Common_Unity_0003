@@ -58,7 +58,7 @@ using System.Threading.Tasks;
  * 위한 자료형을 의미한다. (즉, 제네릭 형식 인자는 메서드 또는 클래스가
  * 동작 할 때 실제 자료형은 치환된다는 것을 알 수 있다.)
  */
-namespace Example._03320203000301_SBS_Weekend_Engine_0003.E01.Example.Classes.Runtime.Example_15
+namespace Example._03320282000301_SBS_Weekend_Engine_0003.E01.Example.Classes.Runtime.Example_15
 {
 	class CE01Example_15
 	{
@@ -108,7 +108,7 @@ namespace Example._03320203000301_SBS_Weekend_Engine_0003.E01.Example.Classes.Ru
 			Console.WriteLine("\n=====> 정렬 후 <=====");
 			PrintValues(oListValues);
 #elif E15_GENERIC_03
-			var oWriterFile = new CE01WriterFile_15("../../03320203000301-SBS_Weekend_Engine_0003/E01/Example/Resources/Example_15/E01Example_15_03.txt");
+			var oWriterFile = new CE01WriterFile_15("../../03320282000301-SBS_Weekend_Engine_0003/E01/Example/Resources/Example_15/E01Example_15_03.txt");
 			var oWriterConsole = new CE01WriterConsole_15();
 
 			for(int i = 0; i < 10; ++i)

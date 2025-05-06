@@ -104,7 +104,7 @@ using System.Threading.Tasks;
  * 의미한다. (즉, 큐 또한 스택처럼 데이터의 순서가 엄격하게 관리
  * 된다는 것을 알 수 있다.)
  */
-namespace Example._03320203000301_SBS_Weekend_Engine_0003.E01.Example.Classes.Runtime.Example_06
+namespace Example._03320282000301_SBS_Weekend_Engine_0003.E01.Example.Classes.Runtime.Example_06
 {
 	class CE01Example_06
 	{

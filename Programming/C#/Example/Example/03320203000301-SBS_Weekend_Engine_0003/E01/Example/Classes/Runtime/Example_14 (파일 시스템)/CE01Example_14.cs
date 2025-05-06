@@ -54,7 +54,7 @@ using System.Threading.Tasks;
  * 개방한다는 것은 파일과 데이터를 주고 받을 수 있는 스트림을 생성하는
  * 행위라는 것을 알 수 있다.)
  */
-namespace Example._03320203000301_SBS_Weekend_Engine_0003.E01.Example.Classes.Runtime.Example_14
+namespace Example._03320282000301_SBS_Weekend_Engine_0003.E01.Example.Classes.Runtime.Example_14
 {
 	class CE01Example_14
 	{
@@ -75,7 +75,7 @@ namespace Example._03320203000301_SBS_Weekend_Engine_0003.E01.Example.Classes.Ru
 			 * 스트림을 쓰기용으로 생성했을 경우이다. (즉, 읽기용으로는
 			 * 파일을 생성하는 것이 불가능하다는 것을 알 수 있다.)
 			 */
-			FileStream oWStream = File.Open("../../03320203000301-SBS_Weekend_Engine_0003/E01/Example/Resources/Example_14/E01Example_14_01.txt", 
+			FileStream oWStream = File.Open("../../03320282000301-SBS_Weekend_Engine_0003/E01/Example/Resources/Example_14/E01Example_14_01.txt", 
 				FileMode.Create, FileAccess.Write);
 
 			// 스트림이 생성되었을 경우
@@ -102,7 +102,7 @@ namespace Example._03320203000301_SBS_Weekend_Engine_0003.E01.Example.Classes.Ru
 				oWriter.Close();
 			}
 
-			FileStream oRStream = File.Open("../../03320203000301-SBS_Weekend_Engine_0003/E01/Example/Resources/Example_14/E01Example_14_01.txt",
+			FileStream oRStream = File.Open("../../03320282000301-SBS_Weekend_Engine_0003/E01/Example/Resources/Example_14/E01Example_14_01.txt",
 				FileMode.Open, FileAccess.Read);
 
 			// 스트림이 생성되었을 경우
@@ -124,7 +124,7 @@ namespace Example._03320203000301_SBS_Weekend_Engine_0003.E01.Example.Classes.Ru
 				oReader.Close();
 			}
 #elif E14_FILE_SYSTEM_02
-			FileStream oWStream = File.Open("../../03320203000301-SBS_Weekend_Engine_0003/E01/Example/Resources/Example_14/E01Example_14_02.bin",
+			FileStream oWStream = File.Open("../../03320282000301-SBS_Weekend_Engine_0003/E01/Example/Resources/Example_14/E01Example_14_02.bin",
 				FileMode.Create, FileAccess.Write);
 
 			// 스트림이 생성되었을 경우
@@ -140,7 +140,7 @@ namespace Example._03320203000301_SBS_Weekend_Engine_0003.E01.Example.Classes.Ru
 				oWriter.Close();
 			}
 
-			FileStream oRStream = File.Open("../../03320203000301-SBS_Weekend_Engine_0003/E01/Example/Resources/Example_14/E01Example_14_02.bin",
+			FileStream oRStream = File.Open("../../03320282000301-SBS_Weekend_Engine_0003/E01/Example/Resources/Example_14/E01Example_14_02.bin",
 				FileMode.Open, FileAccess.Read);
 
 			// 스트림이 생성되었을 경우

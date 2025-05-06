@@ -141,7 +141,7 @@ public static class CE01Extension_13
 	}
 }
 
-namespace Example._03320203000301_SBS_Weekend_Engine_0003.E01.Example.Classes.Runtime.Example_13
+namespace Example._03320282000301_SBS_Weekend_Engine_0003.E01.Example.Classes.Runtime.Example_13
 {
 	class CE01Example_13
 	{

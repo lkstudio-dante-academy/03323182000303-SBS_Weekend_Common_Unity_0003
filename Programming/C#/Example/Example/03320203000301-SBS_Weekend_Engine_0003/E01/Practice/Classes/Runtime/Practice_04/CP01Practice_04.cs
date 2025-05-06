@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Example._03320203000301_SBS_Weekend_Engine_0003.E01.Practice.Classes.Runtime.Practice_04
+namespace Example._03320282000301_SBS_Weekend_Engine_0003.E01.Practice.Classes.Runtime.Practice_04
 {
 	class CP01Practice_04
 	{

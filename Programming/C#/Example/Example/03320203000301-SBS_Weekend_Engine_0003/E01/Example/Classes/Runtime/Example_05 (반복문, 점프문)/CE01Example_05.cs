@@ -83,7 +83,7 @@ using System.Threading.Tasks;
  * 따라서, goto 문을 남발 할 경우 프로그램의 흐름 복잡해질 수 있기
  * 때문에 오늘날 프로그램을 제작하는 환경에서는 거의 사용되지 않는다.
  */
-namespace Example._03320203000301_SBS_Weekend_Engine_0003.E01.Example.Classes.Runtime.Example_05
+namespace Example._03320282000301_SBS_Weekend_Engine_0003.E01.Example.Classes.Runtime.Example_05
 {
 	/*
      * Example 5
